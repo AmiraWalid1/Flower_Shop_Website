@@ -50,6 +50,13 @@ img {
 
 
 /* nav style */
+.tranparent-nav {
+    background-color: transparent;
+}
+.tranparent-nav ul li a {
+    font-size: 23px;
+    font-weight: bold;
+}
 nav {
     background-color: var(--background-color);
     z-index: 100;
@@ -112,14 +119,13 @@ nav li a, nav h2 {
 }
 
 
-/* products */
+/* products page */
 .products .row:not(:first-of-type){
     margin-top: 15px;
 }
 .products .image {
     overflow: hidden;
     box-shadow: 1px 1px 13px -5px #7f91a4;
-    /* border: 1px solid #a6b0ba; */
 }
 .products .image img {
     width: 100%;
@@ -276,6 +282,108 @@ footer ul li a:hover {
     padding: 4px 8px;
 }
 
+/* ///////////////////////////////////////////////////// */
+
+/* contact page */
+.contact-form {
+    position: relative;
+    width: 60%;
+    padding: 20px 40px;
+    background-color: var(--background-color);
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-form h1{
+    font-family: var(--logo-font);
+    text-align: center;
+    color: var(--text-color);
+}
+.contact-form .form-box {
+    width: 60%;
+}
+.contact-form .form-box input, .contact-form .form-box textarea {
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 20px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #27405A;
+    font-size: 20px;
+    resize: none;
+}
+.contact-form .form-box input:focus, .contact-form .form-box textarea:focus {
+    outline: none;
+}
+
+.contact-form .form-box .submit {
+    width: 100%;
+    background-color: #27405A;
+    padding: 15px 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.child {
+    position:absolute;
+    bottom: -60px;
+    right: -150px;
+    background-color: #27405A;
+    color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.child div{
+    margin: 30px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.child div p:first-of-type {
+    font-family: var(--logo-font);
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.child div p i{
+    font-size: 25px;
+    margin-right: 7px;
+}
+.child div p:last-of-type{
+    font-size: 20px; 
+    text-indent: 20px;
+    font-weight: normal;
+}
+.bottom a {
+    color: var(--background-color);
+    font-style: italic;
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+}
+.bottom a:hover, .submit:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
 /* animation */
 .animation {
     animation: up 1s;
@@ -296,112 +404,4 @@ footer ul li a:hover {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
 }
-}
-
-/* add background image with overlay */
-.backgroundimageOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../images/backgroundImg.jpeg) no-repeat center center/cover;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-    background-color: rgba(255, 254, 254,0.5);
-    z-index: 1;
-}
-
-.Form {
-    position: relative;
-    z-index: 2;
-    padding: 50px 0;
-    width: 60%;
-    height:73%;
-    background-color: white;
-    margin: 50px 100px;
-    margin-left: 150px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.contactForm {
-    border:none;
-    border-bottom: 2px solid #27405A;
-    padding: 20px;
-    margin: 20px 70px;
-    width: 50%;
-    font-size: 20px;
-}
-div h1{
-    margin: 5px 70px;
-}
-
-.submit {
-    background-color: #27405A;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px 70px;
-    width: 50%;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.child {
-    width: 50%;
-    background-color: #27405A;
-    color: white;
-    height: 70%;
-    position:absolute;
-    bottom: -50px;
-    right: -400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 20px;
-}
-.child div{
-    margin: 30px 0;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-.top div, .middle div, .bottom div{
-    font-size: 20px; 
-    text-indent: 20px;
-    font-weight: normal;
-}
-.bottom a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-style: italic;
-    font-size: 20px;
-    text-transform: none;
-}
-.bottom a:hover {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-style: italic;
-    font-size: 20px;
-    text-transform: none;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.submit:hover {
-    background-color: #27405A;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px 70px;
-    width: 50%;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-div i{
-    font-size: 30px;
-    margin-right: 10px;
 }
