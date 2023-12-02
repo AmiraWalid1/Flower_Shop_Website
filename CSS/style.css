@@ -463,14 +463,15 @@ footer ul li a:hover {
     text-align: center;
     background-color: #27405A;
     color: white;
-    font-size: 30px;
+    /* font size in percent depending on screen size*/
+    font-size: 2vw;
     font-weight: bold;
     letter-spacing: 2px;
 }
 .thanks a {
     color: var(--background-color);
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-transform: none;
     text-decoration: none;
 }
@@ -482,7 +483,7 @@ footer ul li a:hover {
     font-family: 'DM Serif Display', serif;
     font-family: 'Merriweather', serif;
     text-align: center;
-    font-size: 100px;
+    font-size: 5vw;
     margin-bottom: 30px;
 }
 
