@@ -359,6 +359,7 @@ footer ul li a:hover {
     padding: 20px 40px;
     background-color: var(--background-color);
     margin: 30px auto;
+    margin-top: 100px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 10px;
@@ -368,7 +369,8 @@ footer ul li a:hover {
 }
 
 .contact-form h1{
-    font-family: var(--logo-font);
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Merriweather', serif;
     text-align: center;
     color: var(--text-color);
 }
