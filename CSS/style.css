@@ -285,7 +285,7 @@ footer ul li a:hover {
     letter-spacing: 5px;
 }
 .formbox .row {
-    background-color: #344b64;
+    background-color: #3E515D;
     font-family: var(--text-font);
     margin: 30px auto;
     padding: 30px;
@@ -447,6 +447,19 @@ footer ul li a:hover {
 }
 .bottom a:hover, .submit:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/*checkout*/
+.container_checkout{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input {
+    width: 250px;
+    height: 150;
 }
 
 
