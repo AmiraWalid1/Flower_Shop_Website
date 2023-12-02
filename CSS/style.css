@@ -373,6 +373,7 @@ footer ul li a:hover {
     font-family: 'Merriweather', serif;
     text-align: center;
     color: var(--text-color);
+    font-size: 2.5vw
 }
 .contact-form .form-box {
     width: 60%;
@@ -385,6 +386,8 @@ footer ul li a:hover {
     border:none;
     border-bottom: 2px solid #27405A;
     font-size: 20px;
+    /* place holder size*/
+    font-size: 1.5vw;
     resize: none;
 }
 .contact-form .form-box input:focus, .contact-form .form-box textarea:focus {
@@ -396,7 +399,7 @@ footer ul li a:hover {
     background-color: #27405A;
     padding: 15px 20px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: bold;
     color: var(--background-color);
     border: none;
