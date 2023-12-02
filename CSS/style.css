@@ -451,6 +451,40 @@ footer ul li a:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Thanks page */
+.thanks {
+    position: relative;
+    width: 100%;
+    padding: 10% 0;
+    margin: 10% auto;
+    margin-top: 7%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: #27405A;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.thanks a {
+    color: var(--background-color);
+    font-style: italic;
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+}
+.thanks a:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+.thanks h1 {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -466,12 +500,12 @@ footer ul li a:hover {
         -moz-transform: translateY(50%);
         -ms-transform: translateY(50%);
         -o-transform: translateY(50%);
-}
+    }
     to {
         transform: translateY(0);
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-}
+    }
 }
