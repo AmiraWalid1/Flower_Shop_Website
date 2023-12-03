@@ -359,6 +359,7 @@ footer ul li a:hover {
     padding: 20px 40px;
     background-color: var(--background-color);
     margin: 30px auto;
+    margin-top: 100px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 10px;
@@ -368,9 +369,11 @@ footer ul li a:hover {
 }
 
 .contact-form h1{
-    font-family: var(--logo-font);
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Merriweather', serif;
     text-align: center;
     color: var(--text-color);
+    font-size: 2.5vw
 }
 .contact-form .form-box {
     width: 60%;
@@ -383,6 +386,8 @@ footer ul li a:hover {
     border:none;
     border-bottom: 2px solid #27405A;
     font-size: 20px;
+    /* place holder size*/
+    font-size: 1.5vw;
     resize: none;
 }
 .contact-form .form-box input:focus, .contact-form .form-box textarea:focus {
@@ -394,7 +399,7 @@ footer ul li a:hover {
     background-color: #27405A;
     padding: 15px 20px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: bold;
     color: var(--background-color);
     border: none;
@@ -449,6 +454,41 @@ footer ul li a:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Thanks page */
+.thanks {
+    position: relative;
+    width: 100%;
+    padding: 10% 0;
+    margin: 10% auto;
+    margin-top: 7%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: #27405A;
+    color: white;
+    /* font size in percent depending on screen size*/
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.thanks a {
+    color: var(--background-color);
+    font-style: italic;
+    font-size: 1.5vw;
+    text-transform: none;
+    text-decoration: none;
+}
+.thanks a:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+.thanks h1 {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 30px;
+}
 
 /*checkout*/
 .container_checkout{
@@ -477,12 +517,12 @@ input {
         -moz-transform: translateY(50%);
         -ms-transform: translateY(50%);
         -o-transform: translateY(50%);
-}
+    }
     to {
         transform: translateY(0);
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-}
+    }
 }
