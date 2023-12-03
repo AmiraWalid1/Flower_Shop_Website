@@ -52,6 +52,10 @@ for (let i = 0; i < 3; i++) {
         row.appendChild(box);
         index++;
 
+        btn.onclick = function() {
+            window.location.href = "checkout.html";
+        }
+
     }
     productsContainer.appendChild(row);
 }
