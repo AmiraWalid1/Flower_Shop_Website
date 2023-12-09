@@ -25,18 +25,22 @@
         <div class="container">
             <div class="row col-md-8 mb-md-3 mt-sm-0 mt-4">
                 <h1 class="mb-5">Login</h1>
-                <div class="message-box" id="messageBox">
+                <!-- <div class="message-box" id="messageBox">
                     <p class="message-text" id="messageText">Invalid email or password. Please try again.</p>
                     <button onclick="closeMsg()">Close</button>
-                </div>
+                </div> -->
                 <form action="home.html" method="POST">
                     <div class="form-floating mb-2 mb-md-3">
                         <input type="email" class="form-control" id="emailInput" placeholder="Email" required>
                         <label for="emailInput">Email</label>
+                        <p class="error1">Invalid email format. Please enter a valid email address.</p>
                     </div>
                     <div class="form-floating mb-2 mb-md-3">
                         <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
                         <label for="passwordInput">Password</label>
+                        <p class="error2">Password must contain at least 8 characters, including uppercase, lowercase,
+                            and a number or special character.</p>
+                        <p class="error3">Invalid email and password Please try again.</p>
                     </div>
                     <button type="submit" class="btn">Login</button>
                 </form>

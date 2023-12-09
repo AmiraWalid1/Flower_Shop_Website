@@ -318,38 +318,23 @@ footer ul li a:hover {
 .formbox .btn:hover {
     background-color: var(--background-color);
 }
-.formbox p {
+.formbox>p {
     color: var(--background-color);
     font-size: 18px;
     letter-spacing: 1px;
 }
-.formbox p a {
+.formbox>p a {
     text-decoration: underline;
 }
-.formbox p a:hover {
+.formbox>p a:hover {
     color: var(--background-color);
 }
 /* error msg */
-.message-box {
+.error1, .error2, .error3 {
     display: none;
-    padding: 20px;
-    background-color: var(--background-color);
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    margin: 10px 0 20px;
+    color: rgb(239 75 75);;
 }
-.message-box p {
-    color: var(--text-color);
-}
-.message-box button {
-    border: none;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    padding: 4px 8px;
-}
-
 /* ///////////////////////////////////////////////////// */
 
 /* contact page */
