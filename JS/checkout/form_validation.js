@@ -1,6 +1,7 @@
 var form = document.forms[0];
 var phone_number = document.querySelector("[name='phoneNumber']");
 var email = document.querySelector("[name='email']");
+var note= document.querySelector("[name='notes']");
 var btn = form.querySelector("button");
 
 var phone_error = phone_number.parentElement.querySelector('p');
@@ -15,12 +16,14 @@ form.addEventListener('submit', function(event)
 
     phone_error.style.display='none';
     email_error.style.display='none';
+    note.setAttribute("rows", "4");
 
     if(phone_number.value.length < 11)
     {    
         phone_error.style.display='block';
         phone_error.style.color = 'red';
         is_valid = false;
+        note.setAttribute("rows", "5");
     }
     if(!vaild_email.test(email.value))
     {   
@@ -33,9 +36,5 @@ form.addEventListener('submit', function(event)
     {
         form.submit();
     }
-   
-    
-
-
 });
     
