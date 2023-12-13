@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body class="background-img">
+<body class="background-img" id="checkout">
     <!-- header -->
     <nav class="tranparent-nav p-3 mb-0" style="height: 80px;">
         <ul class="d-flex justify-content-around align-items-center mb-0">
@@ -46,11 +46,11 @@
                         <input id="firstName" type="text" name="firstName" required>
                     </div>
                     <div class="right">
-                        <label for="gov">
+                        <label for="gov"> 
                             <h4>Governorate</h4>
                         </label>
                         <br>
-                        <input id="gov" list="Governorate" name="Governorate">
+                        <input id="gov" list="Governorate" name="Governorate" required>
                         <datalist id="Governorate">
                             <option value="Ismailia">Ismailia</option>
                             <option value="Sharqiya">Sharqiya</option>
@@ -85,12 +85,14 @@
                                 <h4>Phone number</h4>
                             </label><br>
                             <input id="phoneNumber" type="text" name="phoneNumber" required>
+                            <p style="display:none;">invalid phone number</p>
                         </div>
                         <div style="margin-top: 10px;">
                             <label for="email">
                                 <h4>Email address</h4>
                             </label><br>
                             <input id="email" type="email" name="email" required>
+                            <p style="display:none;">invalid email</p>
                         </div>
                     </div>
                     <div class="right" style="margin-top: 10px;">
@@ -158,7 +160,7 @@
         </div>
     </footer>
     <script src="JS/checkout/checkout.js"></script>
-
+    <script src="JS/checkout/form_validation.js"></script>
 
 </body>
 
