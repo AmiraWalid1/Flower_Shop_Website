@@ -479,7 +479,7 @@ footer ul li a:hover {
 .container_checkout{
     margin: auto;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-evenly;
 }
 input {
