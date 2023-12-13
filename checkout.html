@@ -31,14 +31,14 @@
     </nav>
 
 
-    <div class="container_checkout" style="background-color:#3E515D; width: 80%; height: 530px;  padding: 30px;">
+    <div class="container_checkout" id="main_div">
         <div class="left">
-            <form action="./thanks.html" method="get" style="color: #EAEBEC ; font-family:alice;">
-                <div style="text-align: center;">
+            <form action="./thanks.html" method="get">
+                <div>
                     <h2>Checkout</h2>
                 </div>
                 <div class="container_checkout">
-                    <div class="left" style="margin-right: 20px;">
+                    <div class="left">
                         <label for="firstName">
                             <h4>First name</h4>
                         </label>
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="container_checkout" style="margin-top: 10px;">
-                    <div class="left" style="margin-right: 20px;">
+                    <div class="left">
                         <label for="lastName">
                             <h4>Last name</h4>
                         </label><br>
@@ -79,20 +79,20 @@
                 </div>
 
                 <div class="container_checkout">
-                    <div class="left" style="margin-right: 20px;">
-                        <div style="margin-top: 10px;">
+                    <div class="left">
+                        <div>
                             <label for="phoneNumber">
                                 <h4>Phone number</h4>
                             </label><br>
                             <input id="phoneNumber" type="text" name="phoneNumber" required>
-                            <p style="display:none;">invalid phone number</p>
+                            <p class="error">invalid phone number</p>
                         </div>
-                        <div style="margin-top: 10px;">
+                        <div>
                             <label for="email">
                                 <h4>Email address</h4>
                             </label><br>
                             <input id="email" type="email" name="email" required>
-                            <p style="display:none;">invalid email</p>
+                            <p class="error">invalid email</p>
                         </div>
                     </div>
                     <div class="right" style="margin-top: 12px;">
@@ -103,17 +103,16 @@
                         <textarea id="notes" name="notes" rows="4" cols="26"></textarea>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 15px;">
-                    <input type="submit" value="Place Order"
-                        style="width: 250px; height: 50px; font-family: mango vintage personal use only; ">
+                <div id="checkout_submit">
+                    <input type="submit" value="Place Order">
                     <p>Note: Payments are upon delivery</p>
                 </div>
             </form>
         </div>
         <div class="right" id="order_details">
             <img src="./images/p1 (1).jpg" height="400px">
-            <div class="text" style="margin-top: 15px; font-size: 20px; color: white; text-align: center;">
-                <p style="margin-bottom: 0;">Vibarent Charm</p>
+            <div class="text">
+                <p>Vibarent Charm</p>
                 <span>12$</span>
             </div>
         </div>
