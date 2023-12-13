@@ -476,6 +476,21 @@ footer ul li a:hover {
 }
 
 /*checkout*/
+#main_div
+{
+    background-color:#3E515D;
+    width: 80%;
+    height: 530px;
+    padding: 30px;
+}
+form{
+    color: #EAEBEC ;
+    font-family:alice;
+}
+#main_div h2
+{
+    text-align: center; 
+}
 .container_checkout{
     margin: auto;
     display: flex;
@@ -486,9 +501,41 @@ input {
     width: 250px;
     height: 150;
 }
+.container_checkout .left
+{
+    margin-right: 20px;
+}
 
+.left > div{
+    margin-top: 10px;
+}
+#order_details div{
+    margin-top: 15px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#order_details p
+{
+    margin-bottom: 0;
+}
 
+#checkout_submit
+{
+    text-align: center;
+    margin-top: 15px;
+}
 
+#checkout_submit input
+{
+    width: 250px;
+    height: 50px;
+    font-family: mango vintage personal use only; 
+}
+
+.error{
+    display:none;
+}
 
 /* animation */
 .animation {
