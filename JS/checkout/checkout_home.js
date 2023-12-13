@@ -15,7 +15,7 @@ for(let i = 0; i < sz ; i++)
         localStorage.setItem('box_name', box_name.innerHTML);
         localStorage.setItem('box_price', box_price.innerHTML);
         
-       box_btn.setAttribute('href', "checkout.html");
+        box_btn.setAttribute('href', "checkout.html");
     });
     })(i);
     
