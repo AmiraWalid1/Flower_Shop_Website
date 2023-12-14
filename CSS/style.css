@@ -342,15 +342,16 @@ footer ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 90VH;
 }
 .contact-form {
     
     position: relative;
     width: 60%;
-    padding: 20px 40px;
+    padding: 1.7vw 3.4vw;
     background-color: var(--background-color);
-    margin: auto;
-    margin-top: 130px;
+    margin-right:10%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 10px;
@@ -373,7 +374,6 @@ footer ul li a:hover {
     width: 100%;
     background-color: var(--background-color);
     padding: 20px;
-    margin: 10px 0;
     border:none;
     border-bottom: 2px solid #27405A;
     /* place holder size*/
@@ -386,28 +386,23 @@ footer ul li a:hover {
 
 .contact-form .form-box .submit {
     width: 100%;
-    background-color: #27405A;
-    padding: 15px 20px;
-    margin-top: 10px;
+    background-color: rgb(39, 64, 90);
+    padding: 0.5vw 1.7vw;
+    margin-top: 1vw;
     font-size: 2vw;
-    font-weight: bold;
     color: var(--background-color);
     border: none;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .child {
-    position:absolute;
-    bottom: -60px;
-    right: -150px;
+    position: absolute;
+    bottom: -7vw;
+    right: -14vw;
     background-color: #27405A;
     color: var(--background-color);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px 40px;
+    padding: 1.7vw 3.4vw;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
