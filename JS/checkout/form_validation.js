@@ -4,7 +4,8 @@ var email = document.querySelector("[name='email']");
 var note= document.querySelector("[name='notes']");
 var btn = form.querySelector("button");
 
-var phone_error = phone_number.parentElement.querySelector('p');
+var phone_error1 = phone_number.parentElement.querySelectorAll('p')[0];
+var phone_error2 = phone_number.parentElement.querySelectorAll('p')[1];
 var email_error = email.parentElement.querySelector('p');
 
 form.addEventListener('submit', function(event)
@@ -14,14 +15,23 @@ form.addEventListener('submit', function(event)
     let is_valid = true;
     let vaild_email=/^[A-Za-z0-9_]+@(gmail|yahoo)\.com$/;
 
-    phone_error.style.display='none';
+    phone_error1.style.display='none';
+    phone_error2.style.display='none';
     email_error.style.display='none';
     note.setAttribute("rows", "4");
 
-    if(phone_number.value.length < 11)
-    {    
-        phone_error.style.display='block';
-        phone_error.style.color = 'red';
+    
+    if(phone_number.value.length !== 11)
+    {   
+        phone_error1.style.display='block';
+        phone_error1.style.color = 'red';
+        is_valid = false;
+        note.setAttribute("rows", "5");
+    }
+    else if(isNaN(phone_number.value))
+    {   
+        phone_error2.style.display='block';
+        phone_error2.style.color = 'red';
         is_valid = false;
         note.setAttribute("rows", "5");
     }
