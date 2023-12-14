@@ -338,13 +338,19 @@ footer ul li a:hover {
 /* ///////////////////////////////////////////////////// */
 
 /* contact page */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contact-form {
+    
     position: relative;
     width: 60%;
     padding: 20px 40px;
     background-color: var(--background-color);
-    margin: 30px auto;
-    margin-top: 100px;
+    margin: auto;
+    margin-top: 130px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 10px;
@@ -354,11 +360,11 @@ footer ul li a:hover {
 }
 
 .contact-form h1{
-    font-family: 'DM Serif Display', serif;
-    font-family: 'Merriweather', serif;
+    font-family: var(--logo-font);
+    font-weight:600;
+    letter-spacing: 3px;
     text-align: center;
     color: var(--text-color);
-    font-size: 2.5vw
 }
 .contact-form .form-box {
     width: 60%;
@@ -370,7 +376,6 @@ footer ul li a:hover {
     margin: 10px 0;
     border:none;
     border-bottom: 2px solid #27405A;
-    font-size: 20px;
     /* place holder size*/
     font-size: 1.5vw;
     resize: none;
@@ -410,7 +415,7 @@ footer ul li a:hover {
 }
 .child div{
     margin: 30px 0;
-    font-size: 25px;
+    font-size: 1.7vw;
     font-weight: bold;
     text-transform: capitalize;
 }
@@ -420,18 +425,18 @@ footer ul li a:hover {
     margin-bottom: 0;
 }
 .child div p i{
-    font-size: 25px;
+    font-size: 1.7vw;
     margin-right: 7px;
 }
 .child div p:last-of-type{
-    font-size: 20px; 
+    font-size: 1.5vw; 
     text-indent: 20px;
     font-weight: normal;
 }
 .bottom a {
     color: var(--background-color);
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.3vw;
     text-transform: none;
     text-decoration: none;
 }
