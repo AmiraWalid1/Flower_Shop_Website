@@ -596,7 +596,7 @@ nav li a, nav h2 {
 
 
 /*checkout*/
-#main_div
+#main-div
 {
     background-color:#3E515D;
     width: 80%;
@@ -608,8 +608,7 @@ form{
     color: #EAEBEC ;
     font-family:alice;
 }
-#main_div h2
-{
+#main-div h2{
     text-align: center;
 }
 
@@ -628,9 +627,14 @@ form{
     justify-content: space-evenly;
     
 }
-
-.container_checkout input {
-    width: 250px;  
+.width-40{
+    width: 40%
+}
+.container_checkout input, textarea {
+    width: 100%;  
+}
+textarea{
+    height: 70%;
 }
 
 #order_details div{
@@ -650,8 +654,8 @@ form{
 
 #checkout_submit input
 {
-    width: 250px;
-    height: 50px;
+    width: 40%;
+    height: 70%;
     font-family: mango vintage personal use only; 
 } 
 
