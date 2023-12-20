@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,7 +14,23 @@
     --text-font: 'Alice', sans-serif;
     --text-color: #06131B;
     --background-color: #EAEBEC;
+    --box-color: #3E515D;
 }
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--box-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color);
+}
+
 
 /* selection */
 ::selection {
@@ -30,6 +50,9 @@
 
 
 /* custom element */
+h2 {
+    font-family: var(--logo-font);
+}
 ul {
     list-style: none;
     padding-left: 0;
@@ -47,6 +70,9 @@ a:hover {
 img {
     max-width: 100%;
 }
+textarea {
+    resize: none;
+}
 
 
 /* nav style */
@@ -54,7 +80,6 @@ img {
     background-color: transparent;
 }
 .tranparent-nav ul li a {
-    font-size: 23px;
     font-weight: bold;
 }
 nav {
@@ -66,7 +91,6 @@ nav ul, nav h2 {
     flex: 1;
 }
 nav h2 {
-    font-family: var(--logo-font);
     font-size: 30px;
 }
 nav li a, nav h2 {
@@ -78,8 +102,154 @@ nav li a, nav h2 {
     }
 }
 
+/* register & login page */
+.logo h2 {
+    font-size: 35px;
+    color: white;
+}
+.formbox h1 {
+    font-family: var(--logo-font);
+    color: white;
+    letter-spacing: 5px;
+}
+.formbox .row {
+    background-color: var(--box-color);
+    font-family: var(--text-font);
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.formbox form {
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+.formbox .name>div {
+    flex: 1;
+}
+.formbox .name .last {
+    margin-left: 5px;
+}
+.formbox .gender {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.formbox .btn {
+    margin-top: 20px;
+    padding: 10px 100px;
+    background-color: white;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.formbox .btn:hover {
+    background-color: var(--background-color);
+}
+.formbox>p {
+    color: var(--background-color);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.formbox>p a {
+    text-decoration: underline;
+}
+.formbox .row>p a:hover {
+    color: white;
+}
+/* error msg */
+.error1, .error2, .error3 {
+    display: none;
+    margin: 10px 0 20px;
+    color: rgb(239 75 75);;
+}
 
-/* background */
+
+/* home page */
+.home {
+    position: relative;
+    background:url(../images/backgroundImg.jpeg);
+    background-size: cover;
+    height: 630px;
+}
+.head-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.home .head-title h2, .onsale .text h2 {
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 80px;
+    color: var(--background-color);
+}
+.home .head-title p, .onsale .text p {
+    font-size: 25px;
+    font-family: var(--text-font);
+    color: var(--background-color);
+}
+.home a {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 15px 35px;
+    font-weight: bold;
+}
+@media (max-width: 567px) {
+    .home .head-title h2 {
+        font-size: 65px;
+    }
+    .home .head-title p {
+        font-size: 20px;
+    }
+}
+
+.collection img {
+    max-width: 100%;
+    height: 300px;
+}
+.collection .boxex .text a {
+    font-family:var(--text-font);
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 10px 25px;
+}
+
+.onsale {
+    position: relative;
+    height: 540px;
+    background-image: url(../images/florist.png);
+    background-size: cover;
+    background-position: center;
+}
+.onsale .text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--background-color);
+}
+.onsale .text h2 {
+    font-size: 50px;
+}
+.onsale .text a {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10px 35px;
+    font-weight: bold;
+}
+
+
+/* background product & about us pages*/
 .background {
     position: relative;
     background-image: url(../images/florist.png);
@@ -117,8 +287,6 @@ nav li a, nav h2 {
         letter-spacing: 2px;
     }
 }
-
-
 /* products page */
 .products .row:not(:first-of-type){
     margin-top: 15px;
@@ -178,165 +346,6 @@ nav li a, nav h2 {
     color: var(--background-color);
 }
 
-
-/* footer */
-footer {
-    background-color: #27405A;
-}
-footer h3 {
-    text-transform: uppercase;
-    font-family: var(--logo-font);
-}
-footer ul li {
-    margin-top: 10px;
-    padding-left: 5px;
-}
-footer ul li a {
-    transition: .7s ease;
-    -webkit-transition: .7s ease;
-    -moz-transition: .7s ease;
-    -ms-transition: .7s ease;
-    -o-transition: .7s ease;
-}
-footer ul li a:hover {
-    color: var(--background-color) !important;
-    margin-left: 10px;
-}
-
-
-/* home page */
-.home {
-    position: relative;
-    background:url(../images/backgroundImg.jpeg);
-    background-size: cover;
-    height: 630px;
-}
-.head-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.home .head-title h2, .onsale .text h2 {
-    letter-spacing: 5px;
-    font-weight: bold;
-    font-size: 80px;
-    font-family: var(--logo-font);
-    color: var(--background-color);
-}
-.home .head-title p, .onsale .text p {
-    font-size: 25px;
-    font-family: var(--text-font);
-    color: var(--background-color);
-}
-.home a {
-    background-color: var(--text-color);
-    color: var(--background-color);
-    padding: 15px 35px;
-    font-weight: bold;
-}
-
-.collection img {
-    max-width: 100%;
-    height: 300px;
-}
-.collection .boxex .text a {
-    font-family:var(--text-font);
-    background-color: var(--text-color);
-    color: var(--background-color);
-    padding: 10px 25px;
-}
-
-.onsale {
-    position: relative;
-    height: 540px;
-    background-image: url(../images/florist.png);
-    background-size: cover;
-    background-position: center;
-}
-.onsale .text {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: var(--background-color);
-}
-.onsale .text h2 {
-    font-size: 50px;
-}
-.onsale .text a {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 10px 35px;
-    font-weight: bold;
-}
-
-
-/* register & login page */
-.logo h2 {
-    font-family: var(--logo-font);
-    font-size: 35px;
-    color: white;
-}
-.formbox h1 {
-    font-family: var(--logo-font);
-    color: white;
-    letter-spacing: 5px;
-}
-.formbox .row {
-    background-color: #3E515D;
-    font-family: var(--text-font);
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.formbox .name>div {
-    flex: 1;
-}
-.formbox .name .last {
-    margin-left: 5px;
-}
-.formbox .gender {
-    color: white;
-    font-size: 20px;
-    margin: 20px 0;
-}
-.formbox .btn {
-    margin-top: 20px;
-    padding: 10px 100px;
-    background-color: white;
-    color: var(--text-color);
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-.formbox .btn:hover {
-    background-color: var(--background-color);
-}
-.formbox>p {
-    color: var(--background-color);
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-.formbox>p a {
-    text-decoration: underline;
-}
-.formbox>p a:hover {
-    color: var(--background-color);
-}
-/* error msg */
-.error1, .error2, .error3 {
-    display: none;
-    margin: 10px 0 20px;
-    color: rgb(239 75 75);;
-}
-/* ///////////////////////////////////////////////////// */
-
 /* contact page */
 .contact-form-container {
     display: flex;
@@ -378,7 +387,6 @@ footer ul li a:hover {
     border-bottom: 2px solid #27405A;
     /* place holder size*/
     font-size: 1.5vw;
-    resize: none;
 }
 .contact-form .form-box input:focus, .contact-form .form-box textarea:focus {
     outline: none;
@@ -444,17 +452,19 @@ footer ul li a:hover {
     position: relative;
     width: 100%;
     padding: 10% 0;
-    margin: 10% auto;
     margin-top: 7%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     background-color: #27405A;
     color: white;
-    /* font size in percent depending on screen size*/
-    font-size: 2vw;
+    /*fontsizeinpercentdependingonscreensize*/font-size: 2vw;
     font-weight: bold;
     letter-spacing: 2px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .thanks a {
     color: var(--background-color);
@@ -475,6 +485,7 @@ footer ul li a:hover {
     margin-bottom: 30px;
 }
 
+
 /*checkout*/
 #main_div
 {
@@ -494,12 +505,15 @@ form{
 .container_checkout{
     margin: auto;
     display: flex;
-    /* align-items: center; */
     justify-content: space-evenly;
+    align-items: center;
 }
-input {
+.container_checkout input {
     width: 250px;
     height: 150;
+}
+.container_checkout input:focus, .container_checkout textarea:focus {
+    outline: none;
 }
 .container_checkout .left
 {
@@ -536,6 +550,33 @@ input {
 .error{
     display:none;
 }
+
+
+
+/* footer */
+footer {
+    background-color: var(--box-color);
+}
+footer h3 {
+    text-transform: uppercase;
+    font-family: var(--logo-font);
+}
+footer ul li {
+    margin-top: 10px;
+    padding-left: 5px;
+}
+footer ul li a {
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -moz-transition: .7s ease;
+    -ms-transition: .7s ease;
+    -o-transition: .7s ease;
+}
+footer ul li a:hover {
+    color: var(--background-color) !important;
+    margin-left: 10px;
+}
+
 
 /* animation */
 .animation {
