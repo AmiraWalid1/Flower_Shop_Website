@@ -308,7 +308,6 @@ nav li a, nav h2 {
     -o-transform: scale(1.1);
 }
 .products .text h2 {
-    font-family: var(--logo-font);
     letter-spacing: 3px;
     margin-bottom: 0;
 }
