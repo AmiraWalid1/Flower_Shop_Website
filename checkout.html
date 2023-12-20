@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/checkout.css">
 </head>
 
 <body class="background-img" id="checkout">
@@ -32,91 +33,99 @@
 
 
     <div class="container_checkout" id="main_div">
-        <div class="left">
+        
             <form action="./thanksContact.html" method="get">
-                <div>
-                    <h2>Checkout</h2>
-                </div>
-                <div class="container_checkout">
-                    <div class="left">
-                        <label for="firstName">
-                            <h4>First name</h4>
-                        </label>
-                        <br>
-                        <input id="firstName" type="text" name="firstName" required>
-                    </div>
-                    <div class="right">
-                        <label for="gov">
-                            <h4>Governorate</h4>
-                        </label>
-                        <br>
-                        <input id="gov" list="Governorate" name="Governorate" required>
-                        <datalist id="Governorate">
-                            <option value="Ismailia">Ismailia</option>
-                            <option value="Sharqiya">Sharqiya</option>
-                            <option value="PortSaid">PortSaid</option>
-                            <option value="SouthSinai">SouthSinai</option>
-                            <option value="Cairo">Cairo</option>
-                            <option value="Suez">Suez</option>
-                        </datalist>
-                    </div>
-                </div>
-
-                <div class="container_checkout" style="margin-top: 10px;">
-                    <div class="left">
-                        <label for="lastName">
-                            <h4>Last name</h4>
-                        </label><br>
-                        <input id="lastName" type="text" name="lastName" required>
-                    </div>
-
-                    <div class="right">
-                        <Label for="date">
-                            <h4>Date</h4>
-                        </Label><br>
-                        <input type="date" name="date" value="">
-                    </div>
-                </div>
-
-                <div class="container_checkout">
-                    <div class="left">
+                
+                <div class="checkout-flex-row">
+                    <div class="checkout-flex-col" style="width: 50%;">
                         <div>
-                            <label for="phoneNumber">
-                                <h4>Phone number</h4>
-                            </label><br>
-                            <input id="phoneNumber" type="text" name="phoneNumber" required>
-                            <p class="error">invalid phone number</p>
-                            <p class="error">enter number</p>
+                            <h2>Checkout</h2>
                         </div>
-                        <div>
-                            <label for="email">
-                                <h4>Email address</h4>
-                            </label><br>
-                            <input id="email" type="email" name="email" required>
-                            <p class="error">invalid email</p>
+                        <div class="checkout-flex-row" >
+                            <div class="checkout-flex-col" >
+                                <div>
+                                    <label for="firstName">
+                                        <h4>First name</h4>
+                                    </label>
+                                    <br>
+                                    <input id="firstName" type="text" name="firstName" required>
+                                </div>
+                                <div>
+                                    <label for="gov">
+                                        <h4>Governorate</h4>
+                                    </label>
+                                    <br>
+                                    <input id="gov" list="Governorate" name="Governorate" required>
+                                    <datalist id="Governorate">
+                                        <option value="Ismailia">Ismailia</option>
+                                        <option value="Sharqiya">Sharqiya</option>
+                                        <option value="PortSaid">PortSaid</option>
+                                        <option value="SouthSinai">SouthSinai</option>
+                                        <option value="Cairo">Cairo</option>
+                                        <option value="Suez">Suez</option>
+                                    </datalist>
+
+                                </div>
+                                <div>
+                                    <label for="phoneNumber">
+                                        <h4>Phone number</h4>
+                                    </label><br>
+                                    <input id="phoneNumber" type="text" name="phoneNumber" required>
+                                    <p class="error">invalid phone number</p>
+                                    <p class="error">enter number</p>
+                                </div>
+                                <div>
+                                    <label for="email">
+                                        <h4>Email address</h4>
+                                    </label><br>
+                                    <input id="email" type="email" name="email" required>
+                                    <p class="error">invalid email</p>
+                                </div>
+                            </div>
+                            <div class="checkout-flex-col">
+                                <div>
+                                    <label for="lastName">
+                                        <h4>Last name</h4>
+                                    </label><br>
+                                    <input id="lastName" type="text" name="lastName" required>
+                                    
+                                </div>
+                                <div>
+                                    <Label for="date">
+                                        <h4>Date</h4>
+                                    </Label><br>
+                                    <input type="date" name="date" value="">
+                                </div>
+                                <div>
+                                    <label for="notes">
+                                        <h4>Order notes</h4>
+                                    </label>
+                                    <br>
+                                    <textarea id="notes" name="notes" rows="4" cols="24"></textarea>
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                        <div id="checkout_submit">
+                            <input type="submit" value="Place Order">
+                            <p>Note: Payments are upon delivery</p>
                         </div>
                     </div>
-                    <div class="right" style="margin-top: 12px;">
-                        <label for="notes">
-                            <h4>Order notes</h4>
-                        </label>
-                        <br>
-                        <textarea id="notes" name="notes" rows="4" cols="26"></textarea>
+
+                    <div id="order_details">
+                        <img src="./images/p1 (1).jpg" height="400px">
+                        <div class="text">
+                            <p>Vibarent Charm</p>
+                            <span>12$</span>
+                        </div>
                     </div>
                 </div>
-                <div id="checkout_submit">
-                    <input type="submit" value="Place Order">
-                    <p>Note: Payments are upon delivery</p>
-                </div>
+               
+                
             </form>
-        </div>
-        <div class="right" id="order_details">
-            <img src="./images/p1 (1).jpg" height="400px">
-            <div class="text">
-                <p>Vibarent Charm</p>
-                <span>12$</span>
-            </div>
-        </div>
+        
+        
     </div>
 
 

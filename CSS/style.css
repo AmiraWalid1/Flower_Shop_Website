@@ -491,40 +491,40 @@ nav li a, nav h2 {
 {
     background-color:#3E515D;
     width: 80%;
-    height: 530px;
-    padding: 30px;
+    margin: auto;
+    padding: 2% 0%;   
 }
+
 form{
     color: #EAEBEC ;
     font-family:alice;
 }
 #main_div h2
 {
-    text-align: center; 
-}
-.container_checkout{
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.container_checkout input {
-    width: 250px;
-    height: 150;
-}
-.container_checkout input:focus, .container_checkout textarea:focus {
-    outline: none;
-}
-.container_checkout .left
-{
-    margin-right: 20px;
+    text-align: center;
 }
 
-.left > div{
-    margin-top: 10px;
+.checkout-flex-row{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+       
 }
+
+.checkout-flex-col
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.container_checkout input {
+    width: 100%;  
+}
+
 #order_details div{
-    margin-top: 15px;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -537,7 +537,6 @@ form{
 #checkout_submit
 {
     text-align: center;
-    margin-top: 15px;
 }
 
 #checkout_submit input
@@ -545,10 +544,11 @@ form{
     width: 250px;
     height: 50px;
     font-family: mango vintage personal use only; 
-}
+} 
 
 .error{
     display:none;
+    color: red;
 }
 
 
