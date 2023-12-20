@@ -625,7 +625,7 @@ form{
 }
 
 .container_checkout input {
-    width: 100%;  
+    width: 250px;  
 }
 
 #order_details div{
@@ -653,6 +653,7 @@ form{
 .error{
     display:none;
     color: red;
+    margin:0;
 }
 
 
