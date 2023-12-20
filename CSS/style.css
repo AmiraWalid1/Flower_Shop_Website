@@ -273,7 +273,6 @@ nav li a, nav h2 {
 }
 @media (max-width: 567px) {
     .background {
-        background-size: cover;
         background-attachment: scroll;
         max-height: 244px;
     }
