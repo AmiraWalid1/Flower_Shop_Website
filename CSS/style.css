@@ -347,9 +347,10 @@ nav li a, nav h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90VH;
+    height: 85VH;
 }
 .contact-form {
+    
     position: relative;
     width: 60%;
     padding: 1.7vw 3.4vw;
@@ -592,4 +593,108 @@ footer ul li a:hover {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
     }
+}
+
+/* about page */
+
+.about-us {
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.about-us h1 {
+    font-family: var(--logo-font);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 90%;
+
+}
+
+.palestine {
+    position: absolute;
+    right: 2%;
+    top: 0;
+    margin-left: 5px;
+}
+
+/* team member section */
+.team-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-container h1 {
+    font-family: var(--logo-font);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.team-member {
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.team-member h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 14px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+.team-member a {
+    display: inline-block;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.team-member a:hover {
+    color: rgb(0, 93, 187); 
+    transition: 0.3s;
+
+}
+i{
+    /* color: white; */
+    font-size: 20px;
+    margin-right: 7px;
+    border-radius: 50%;
 }
