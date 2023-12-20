@@ -155,9 +155,6 @@ nav li a, nav h2 {
     font-size: 18px;
     letter-spacing: 1px;
 }
-.formbox>p a {
-    text-decoration: underline;
-}
 .formbox .row>p a:hover {
     color: white;
 }
@@ -276,7 +273,6 @@ nav li a, nav h2 {
 }
 @media (max-width: 567px) {
     .background {
-        background-size: cover;
         background-attachment: scroll;
         max-height: 244px;
     }
@@ -312,7 +308,6 @@ nav li a, nav h2 {
     -o-transform: scale(1.1);
 }
 .products .text h2 {
-    font-family: var(--logo-font);
     letter-spacing: 3px;
     margin-bottom: 0;
 }
@@ -346,13 +341,122 @@ nav li a, nav h2 {
     color: var(--background-color);
 }
 
+
+/* about page */
+.about-us {
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+.about-us .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media  (max-width: 991px){
+    .about-us .container {
+        flex-direction: column;
+    }
+}
+.about-us h1 {
+    font-family: var(--logo-font);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+
+/* team member section */
+.team-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-container h1 {
+    font-family: var(--logo-font);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.team-member {
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.team-member h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.94px;
+}
+
+.team-member h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 14px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+.team-member a {
+    display: inline-block;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.team-member a:hover {
+    color: rgb(0, 93, 187);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.team-member i{
+    font-size: 20px;
+    margin-right: 7px;
+    border-radius: 50%;
+}
+
+
+
 /* contact page */
 .contact-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90VH;
+    height: 85VH;
 }
 .contact-form {
     
