@@ -25,7 +25,12 @@ html {
     background-color: var(--background-color);
 }
 ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
     background-color: var(--box-color);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--text-color);
