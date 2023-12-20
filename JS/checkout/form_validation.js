@@ -23,14 +23,12 @@ form.addEventListener('submit', function(event)
     if(isNaN(phone_number.value))
     {   
         phone_error2.style.display='block';
-        phone_error2.style.color = 'red';
         is_valid = false;
         note.setAttribute("rows", "5");
     }
     else if(phone_number.value.length !== 11)
     {   
         phone_error1.style.display='block';
-        phone_error1.style.color = 'red';
         is_valid = false;
         note.setAttribute("rows", "5");
     }
@@ -38,7 +36,6 @@ form.addEventListener('submit', function(event)
     if(!vaild_email.test(email.value))
     {   
         email_error.style.display='block';
-        email_error.style.color = 'red';
         is_valid = false;
 
     }
