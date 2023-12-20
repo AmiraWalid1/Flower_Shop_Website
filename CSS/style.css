@@ -155,9 +155,6 @@ nav li a, nav h2 {
     font-size: 18px;
     letter-spacing: 1px;
 }
-.formbox>p a {
-    text-decoration: underline;
-}
 .formbox .row>p a:hover {
     color: white;
 }
