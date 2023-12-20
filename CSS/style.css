@@ -407,6 +407,8 @@ nav li a, nav h2 {
 .team-member h2 {
     font-size: 20px;
     margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.94px;
 }
 
 .team-member h3 {
