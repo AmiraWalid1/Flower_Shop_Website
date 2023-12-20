@@ -30,7 +30,7 @@ form.addEventListener('submit', function(event)
     {   
         phone_error1.style.display='block';
         is_valid = false;
-        note.setAttribute("rows", "5");
+        // note.setAttribute("rows", "5");
     }
 
     if(!vaild_email.test(email.value))
