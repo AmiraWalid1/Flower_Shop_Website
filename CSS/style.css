@@ -452,7 +452,6 @@ nav li a, nav h2 {
     margin-right: 7px;
     border-radius: 50%;
 }
-/* if redirected to element with class name our-img do something to highlight it any*/
 #haidy:hover, #haidy:target, #hanna:hover, #hanna:target, #heba:hover, #heba:target, #amira:hover, #amira:target{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
