@@ -1,5 +1,8 @@
 # Fower online shop
 
+## Demo
+https://heba516.github.io/Web-Project/login
+
 ## Description
 A simple online shop with a list of products, shopping cart and checkout.
 
@@ -12,6 +15,7 @@ A simple online shop with a list of products, shopping cart and checkout.
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 
 ## Status
 Project is: _in progress_
